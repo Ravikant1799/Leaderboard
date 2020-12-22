@@ -1,0 +1,28 @@
+<div class="card text-white bg-dark" style="width: 35rem; padding-left: 30">
+  <div class="card-body">
+    <table class="table table-bordered table-dark">
+      <thead>
+        <tr>
+          <h1>Leaderboard</h1>
+        </tr>
+      </thead>
+      <hr />
+      <thead>
+        <tr>
+          <th scope="col">Rank</th>
+          <th scope="col">Name</th>
+          <th scope="col">Score</th>
+        </tr>
+      </thead>
+      <tbody>
+        <% var num=1; %> <% for (var i =0; i <people.length; i+=2 ) { %>
+        <tr>
+          <td><%= num %></td>
+          <td><%=people[i] %></td>
+          <td><%=people[i+1] %></td>
+        </tr>
+        <% num++ %> <%}%>
+      </tbody>
+    </table>
+  </div>
+</div>

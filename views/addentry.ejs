@@ -1,0 +1,26 @@
+<div class="card text-white bg-dark" style="width: 18rem; padding-left: 30">
+  <div class="card-body">
+    <table class="table table-bordered table-dark">
+      <thead>
+        <tr>
+          <h1>New Entry</h1>
+        </tr>
+      </thead>
+    </table>
+    <hr />
+    <form method="post" action="/add">
+      <h6 class="card-title">Name</h6>
+      <div class="form-outline mb-4">
+        <input type="text" id="name" name="name" class="form-control" />
+      </div>
+
+      <h6 class="card-title">Score</h6>
+      <div class="form-outline mb-4">
+        <input type="number" id="score" name="score" class="form-control" />
+      </div>
+
+      <!-- Submit button -->
+      <button type="submit" class="btn btn-primary btn-block">Add</button>
+    </form>
+  </div>
+</div>
